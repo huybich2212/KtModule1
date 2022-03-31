@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let y = 0
+
+    function count(chuoi) {
+        for (let i = 0; i < chuoi.length; i++) {
+            if (chuoi[i] === "a" || chuoi[i] === "o" || chuoi[i] === "e" || chuoi[i] === "u" || chuoi[i] === "i") {
+                y++
+            }
+        }if (y === 0) {
+            return false
+        } else {
+            return y
+        }
+    }
+
+    let string = prompt("nhập vào chuỗi");
+    let a = string.split("");
+    alert(count(a));
+</script>
+
+</body>
+</html>

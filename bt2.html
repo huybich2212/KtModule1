@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findIndex(vitri,mang1) {
+        for(let i=0;i<mang1.length;i++) {
+            if(mang1[i]===vitri) {
+                return i;
+            }
+        }
+    }
+    let array=[1,3,4,5,6,7,8];
+    a=findIndex(4,array);
+    document.write(a+"<br>");
+
+    function timpt(e,arr) {
+        let c=[]
+        if(arr.indexOf(e) === -1)  {
+            return "không tìm thấy";
+        }else {
+            for (let i=0;i < arr.length;i++)  {
+                if (arr[i] ===e) {
+                    c.push(i)
+                }
+            }
+            return c;
+        }
+    }
+    let arr1=[2,4,3,1,7,8,7];
+    let b= +prompt("nhập vào 1 số :","")
+    document.write(timpt(b,arr1))
+</script>
+
+</body>
+</html>

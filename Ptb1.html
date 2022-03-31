@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+
+    function giai_pt_bac_nhat(a, b)
+    {
+        if (a === 0 && b === 0){
+            return ('Phương trình vô số nghiệm');
+        }
+
+        else if (a === 0 && b !== 0){
+            return ("Phương trình vô nghiệm");
+        }
+        else {
+            return ('Phương trình có nghiệm x = ' + (-b/a));
+        }
+    }
+    let a= giai_pt_bac_nhat(5,8);
+    document.write(a)
+
+</script>
+
+</body>
+</html>
